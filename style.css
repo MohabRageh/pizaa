@@ -93,7 +93,7 @@ position: relative;
 {
     position: absolute;
     background-color: #333;
-    font-size: clamp(1rem, 3vh, 3rem);
+    font-size: clamp(1rem, 5vh, 4rem);
     left: 15px;
     top:-200px;
     transform: skew(-20deg);
@@ -217,3 +217,91 @@ margin-bottom: 20px;
     font-family: var(--FF-HEADER);
     padding-left: 50px;
 }
+/*contact*/
+.main__contact{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: var(--PADDING);
+    border: 3px solid --Dark;
+}
+.contact__form{
+    border: 3px solid var(--Dark);
+    padding: calc(var(--PADDING) );
+    padding-top: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.contact__h1,.form__h1{
+    margin-bottom: 20px;
+    font-family: var(--FF-HEADER);
+    padding: var(--PADDING);
+    
+}
+.form__h1{
+    margin-bottom: 0px;
+}
+.form__label{
+    font-size: clamp(1rem, 3vh, 5rem);
+    font-family: var(--FF);
+}
+.form__input{
+    width: 100%;
+    font-size: clamp(1rem, 3vh, 5rem);
+    padding: var(--PADDING);
+    border-radius: 50px;
+    margin: 15px;
+    font-family: var(--FF);
+}
+.form__txtarea{
+    width: 100%;
+    height:400px ;
+    color:var(--Darker);
+    font-size: clamp(1rem, 3vh, 5rem);
+    font-family: var(--FF);
+}
+.form__button{
+    background-color: var(--HTML-COLOR);
+    width: min(150px,50%);
+    padding: var(--PADDING);
+    color:var(--HEADER-COLOR);
+    font-size: inherit;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.contact__aside
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right:0;
+    width: 50px;
+    top: 50%;
+    gap: 10px;
+}
+.aside__button{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+.aside__button:first-child{
+    background-image: url(imgs/fb\ icon.png);
+    background-size:cover ;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.aside__button:nth-child(2){
+    background-image: url(imgs/phone\ icon.png);
+    background-size:cover ;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.aside__button:nth-child(3){
+    background-image: url(imgs/wa\ icon.png);
+    background-size:cover ;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
